@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>Cobblemon Launcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="mark"></div>
+      <div>
+        <h1>Cobblemon</h1>
+        <p id="packline">불러오는 중…</p>
+      </div>
+    </div>
+
+    <div class="account">
+      <div id="who" class="who hidden">
+        <img id="skin" alt="" />
+        <span id="nick"></span>
+        <button id="logout" class="link">로그아웃</button>
+      </div>
+      <button id="login" class="ghost">Microsoft 로그인</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="stage">
+      <div id="statusText" class="status">로그인 후 플레이할 수 있습니다.</div>
+
+      <div class="bar"><div id="bar" class="fill"></div></div>
+      <div id="detail" class="detail"></div>
+
+      <button id="play" class="play" disabled>플레이</button>
+    </section>
+
+    <aside>
+      <label class="field">
+        <span>할당 메모리</span>
+        <select id="ram">
+          <option value="4">4 GB</option>
+          <option value="6">6 GB</option>
+          <option value="8">8 GB</option>
+          <option value="12">12 GB</option>
+          <option value="16">16 GB</option>
+        </select>
+      </label>
+      <button id="folder" class="ghost small">게임 폴더 열기</button>
+
+      <details class="logbox">
+        <summary>로그</summary>
+        <pre id="log"></pre>
+      </details>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

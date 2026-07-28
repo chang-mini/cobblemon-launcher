@@ -1,0 +1,32 @@
+{
+  "name": "cobblemon-launcher",
+  "version": "1.0.0",
+  "description": "Cobblemon 서버 전용 런처",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64"
+  },
+  "dependencies": {
+    "minecraft-launcher-core": "^3.18.2",
+    "msmc": "^5.0.5"
+  },
+  "devDependencies": {
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "kr.cobblemon.launcher",
+    "productName": "Cobblemon Launcher",
+    "files": ["src/**/*", "ui/**/*"],
+    "win": {
+      "target": "nsis",
+      "artifactName": "CobblemonLauncher-${version}-setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    }
+  }
+}

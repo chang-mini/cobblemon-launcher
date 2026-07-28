@@ -1,0 +1,7 @@
+node_modules/
+dist/
+out/
+*.log
+# 로컬 계정 토큰 — 절대 커밋 금지
+account.json
+settings.json

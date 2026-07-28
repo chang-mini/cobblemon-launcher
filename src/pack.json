@@ -1,0 +1,98 @@
+{
+  "name": "Cobblemon Server",
+  "packVersion": "1.0.0",
+  "minecraft": "1.21.1",
+  "fabricLoader": "0.19.3",
+  "mods": [
+    {
+      "file": "fabric-api-0.116.15+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/Nlt8gI9z/fabric-api-0.116.15%2B1.21.1.jar",
+      "sha1": "d25c793833a90cc028c9a61bc4546cd578a70ce1",
+      "size": 2452718
+    },
+    {
+      "file": "architectury-13.0.11-fabric.jar",
+      "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/Pzc2FP5K/architectury-13.0.11-fabric.jar",
+      "sha1": "18200609d4c3571c4237b50884966f6fd82431ea",
+      "size": 600921
+    },
+    {
+      "file": "ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+      "url": "https://cdn.modrinth.com/data/ohNO6lps/versions/N5qzq0XV/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+      "sha1": "18bf1f21cd2db6dcd4e42db85eae54e2a49a48ee",
+      "size": 633065
+    },
+    {
+      "file": "Cobblemon-fabric-1.7.3+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/MdwFAVRL/versions/kF7CvxTo/Cobblemon-fabric-1.7.3%2B1.21.1.jar",
+      "sha1": "f192cda3fdfec0f20d1dee1887ec1b9e77b1618c",
+      "size": 135801550
+    },
+    {
+      "file": "rctapi-fabric-1.21.1-0.15.2-beta.jar",
+      "url": "https://cdn.modrinth.com/data/CBfM2yw7/versions/9OZx0coL/rctapi-fabric-1.21.1-0.15.2-beta.jar",
+      "sha1": "a75bb662e507c3932304d80ed514ec57e5dbf69b",
+      "size": 234250
+    },
+    {
+      "file": "rctmod-fabric-1.21.1-0.18.1-beta.jar",
+      "url": "https://cdn.modrinth.com/data/lRwTUnD7/versions/gQx1F1dx/rctmod-fabric-1.21.1-0.18.1-beta.jar",
+      "sha1": "00bf82e254bddb804529222567e5719310524085",
+      "size": 6757956
+    },
+    {
+      "file": "cobblemonpokemonbadges-fabric-0.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/pPldOOeY/versions/LFfopB1R/cobblemonpokemonbadges-fabric-0.1.1.jar",
+      "sha1": "ed857e4cd38a8b02ad191bc794c0085429687e75",
+      "size": 129759
+    },
+    {
+      "file": "CobbleFurnies-fabric-1.2.jar",
+      "url": "https://cdn.modrinth.com/data/AXY1OO9m/versions/54k31lEX/CobbleFurnies-fabric-1.2.jar",
+      "sha1": "a71f20907c3350680a11054584cf96963f5875e5",
+      "size": 2337235
+    },
+    {
+      "file": "Radical Gyms & Structures - RGS.jar",
+      "url": "https://cdn.modrinth.com/data/3sLJoaQH/versions/mk1teRxf/Radical%20Gyms%20%26%20Structures%20-%20RGS.jar",
+      "sha1": "4466492a22f2370d7b47b8e0ea6aa12977099595",
+      "size": 2084611
+    },
+    {
+      "file": "CobbleDollars-fabric-2.0.0+Beta-6.1+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/s7N7AsqL/versions/NQdxKsW7/CobbleDollars-fabric-2.0.0%2BBeta-6.1%2B1.21.1.jar",
+      "sha1": "a3f33a9d51be927c47fe72e12de6789e8bab98f2",
+      "size": 500815
+    },
+    {
+      "file": "sodium-fabric-0.8.12+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/AANobbMI/versions/KIRFiWG4/sodium-fabric-0.8.12%2Bmc1.21.1.jar",
+      "sha1": "70381d969eb63c0aa09dc581ef4b9a79782c0123",
+      "size": 1573180
+    },
+    {
+      "file": "entityculling-fabric-1.10.5-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/hsWvcyFJ/entityculling-fabric-1.10.5-mc1.21.1.jar",
+      "sha1": "7e8c9c44049e6575e75d1fe38d6006306b8d5623",
+      "size": 1595131
+    },
+    {
+      "file": "ferritecore-7.0.3-fabric.jar",
+      "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar",
+      "sha1": "a8a6a34fcda177da2828cedef44e0e538cf78aad",
+      "size": 123450
+    },
+    {
+      "file": "modernfix-fabric-5.25.1+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/NnNX8LBn/modernfix-fabric-5.25.1%2Bmc1.21.1.jar",
+      "sha1": "4ab39e9c736e7204146792c545ec5b29fc0a3872",
+      "size": 471258
+    },
+    {
+      "file": "lithium-fabric-0.15.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/N08Z8wog/lithium-fabric-0.15.4%2Bmc1.21.1.jar",
+      "sha1": "7d82a004403b7780d4443d8e40361a55cfd0ae63",
+      "size": 797454
+    }
+  ]
+}

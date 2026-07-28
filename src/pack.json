@@ -1,6 +1,6 @@
 {
   "name": "Cobblemon Server",
-  "packVersion": "1.0.0",
+  "packVersion": "1.0.1",
   "minecraft": "1.21.1",
   "fabricLoader": "0.19.3",
   "mods": [
@@ -45,6 +45,12 @@
       "url": "https://cdn.modrinth.com/data/pPldOOeY/versions/LFfopB1R/cobblemonpokemonbadges-fabric-0.1.1.jar",
       "sha1": "ed857e4cd38a8b02ad191bc794c0085429687e75",
       "size": 129759
+    },
+    {
+      "file": "athena-fabric-1.21.1-4.0.6.jar",
+      "url": "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/JfyYsWKP/athena-fabric-1.21.1-4.0.6.jar",
+      "sha1": "92534d85cad33ab1fee598068443c685f4bb06e0",
+      "size": 88425
     },
     {
       "file": "CobbleFurnies-fabric-1.2.jar",

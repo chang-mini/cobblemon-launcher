@@ -8,6 +8,7 @@
     "dist": "electron-builder --win --x64"
   },
   "dependencies": {
+    "extract-zip": "^2.0.1",
     "minecraft-launcher-core": "^3.18.2",
     "msmc": "^5.0.5"
   },
@@ -18,7 +19,10 @@
   "build": {
     "appId": "kr.cobblemon.launcher",
     "productName": "Cobblemon Launcher",
-    "files": ["src/**/*", "ui/**/*"],
+    "files": [
+      "src/**/*",
+      "ui/**/*"
+    ],
     "win": {
       "target": "nsis",
       "artifactName": "CobblemonLauncher-${version}-setup.${ext}"

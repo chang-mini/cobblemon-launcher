@@ -9,7 +9,7 @@ const fsp = require("fs/promises");
 const os = require("os");
 
 const auth = require("./auth");
-const { ensureFabric, syncMods, fabricVersionId, pack } = require("./installer");
+const { ensureFabric, ensureJava, syncMods, fabricVersionId, pack } = require("./installer");
 
 const SERVER = { host: "", port: 25565 }; // 배포 전 채울 것 (DDoS 프록시 주소 권장)
 
@@ -122,6 +122,10 @@ ipcMain.handle("play", async () => {
   send("status", { phase: "fabric", text: "Fabric 확인 중…" });
   const versionId = await ensureFabric(root, (m) => send("log", m));
 
+  send("status", { phase: "java", text: "Java 21 확인 중…" });
+  const javaPath = await ensureJava(root, (m) => send("log", m),
+    (ratio) => send("mod-progress", { name: "Java 21 (JRE)", state: "downloading", done: 0, total: 1, ratio }));
+
   send("status", { phase: "mods", text: "모드 확인 중…" });
   const removed = await syncMods(root, (s) => send("mod-progress", s));
   if (removed.length) send("log", `팩에 없는 모드 ${removed.length}개를 정리했습니다.`);
@@ -144,6 +148,7 @@ ipcMain.handle("play", async () => {
     root,
     version: { number: pack.minecraft, type: "release", custom: versionId },
     memory: { max: `${ramGB}G`, min: "2G" },
+    javaPath,   // 시스템 Java 를 쓰지 않는다 — Java 17 이면 Fabric 이 거부한다
     // 서버 주소를 넘기면 게임 시작 직후 자동 접속한다
     ...(SERVER.host ? { quickPlay: { type: "multiplayer", identifier: `${SERVER.host}:${SERVER.port}` } } : {}),
   });
